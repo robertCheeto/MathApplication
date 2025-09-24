@@ -40,7 +40,7 @@ public class MathApp {
         System.out.println();
 
         // Question 5 - Find the distance between the points (5, 10) & (85, 50)
-        double pointX1 = 5;
+        double pointX1 = 5;     // changed variable type to double so it can be used in question 6
         int pointX2 = 85;
         int pointY1 = 10;
         int pointY2 = 50;
