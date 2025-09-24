@@ -9,7 +9,9 @@ public class MathApp {
         int highestSalary;
         highestSalary = Math.max(bobSalary,garySalary);
         System.out.println("Question 1:");
-        System.out.println("The highest salary is $" + highestSalary);
+        System.out.println("Bob's salary is $" + bobSalary);
+        System.out.println("Gary's salary is $" + garySalary);
+        System.out.println("The highest salary between the two is $" + highestSalary);
         System.out.println();
 
         // Question 2 - Display the smaller price
@@ -18,6 +20,8 @@ public class MathApp {
         double lowestCost;
         lowestCost = Math.min(carPrice, truckPrice);
         System.out.println("Question 2:");
+        System.out.println("The price of a car is: $" + carPrice);
+        System.out.println("The price of a truck is: $" + truckPrice);
         System.out.println("The cheapest cost between the two is $" + lowestCost);
         System.out.println();
 
@@ -51,7 +55,7 @@ public class MathApp {
         System.out.println("The sum of these two differences squared is: " + totalSum);
 
         double finalValue = Math.sqrt(totalSum);
-        System.out.println("The square root is the final value is: " + Math.round(finalValue));
+        System.out.println("The distance between the two values is: " + Math.round(finalValue));
         System.out.println();
 
         // Question 6 - display the absolute value of a variable after it is set to -3.8
@@ -67,7 +71,7 @@ public class MathApp {
         System.out.println("Generated: " + Math.random());
         System.out.println();
 
-        // Question 8 - Calculate how many minutes are in 24 days | Bonus - calculate the amount of miliseconds
+        // Question 8 - Calculate how many minutes are in 24 days | Bonus - calculate the amount of milliseconds
         int totalDays = 24;
         int totalHours;
         int totalMinutes;
