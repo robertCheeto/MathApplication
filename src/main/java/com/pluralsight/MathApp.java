@@ -68,6 +68,8 @@ public class MathApp {
         // Question 7 - find and display a random number between 0 and 1
         System.out.println("Question 7:");
         System.out.println("Printing a random number between 0 and 1...");
+        // formula to get a random number between two values
+        // double randomNumber = Math.random() * ((1 - 0) + 1);
         System.out.println("Generated: " + Math.random());
         System.out.println();
 
