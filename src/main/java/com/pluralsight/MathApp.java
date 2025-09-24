@@ -28,7 +28,7 @@ public class MathApp {
         // Question 3 - Display the area of a circle w/ a radius of 7.25
         double radius = 7.25;
         double area;
-        area = Math.PI * (radius * radius);
+        area = Math.PI * Math.pow(radius, 2);
         System.out.println("Question 3:");
         System.out.println("The area of a circle with a radius of " + radius + " is: " + Math.round(area));
         System.out.println();
