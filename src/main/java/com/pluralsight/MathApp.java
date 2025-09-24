@@ -36,12 +36,54 @@ public class MathApp {
         System.out.println();
 
         // Question 5 - Find the distance between the points (5, 10) & (85, 50)
-        int pointX1 = 5;
+        double pointX1 = 5;
         int pointX2 = 85;
         int pointY1 = 10;
         int pointY2 = 50;
 
+        System.out.println("Question 5:");
+        double differenceX = pointX2 - pointX1;
+        System.out.println("The difference between the X coordinates is: " + differenceX);
+        int differenceY = pointY2 - pointY1;
+        System.out.println("The difference between the Y coordinates is: " + differenceY);
 
+        double totalSum = Math.pow(differenceX, 2) + Math.pow(differenceY, 2);
+        System.out.println("The sum of these two differences squared is: " + totalSum);
+
+        double finalValue = Math.sqrt(totalSum);
+        System.out.println("The square root is the final value is: " + Math.round(finalValue));
+        System.out.println();
+
+        // Question 6 - display the absolute value of a variable after it is set to -3.8
+        pointX1 = -3.8;
+        System.out.println("Question 6:");
+        System.out.println("The first X coordinate from question 5 is now: " + pointX1);
+        System.out.println("The absolute value of -3.8 is " + Math.abs(pointX1));
+        System.out.println();
+
+        // Question 7 - find and display a random number between 0 and 1
+        System.out.println("Question 7:");
+        System.out.println("Printing a random number between 0 and 1...");
+        System.out.println("Generated: " + Math.random());
+        System.out.println();
+
+        // Question 8 - Calculate how many minutes are in 24 days | Bonus - calculate the amount of miliseconds
+        int totalDays = 24;
+        int totalHours;
+        int totalMinutes;
+        int totalSeconds;
+        int totalMilliSeconds;
+        System.out.println("Question 8:");
+        System.out.println("If you want to know how many minutes are in " + totalDays + " days, I'll tell you!");
+        totalHours = totalDays * 24;
+        System.out.println("First you need to find the amount of hours in " + totalDays + " days by multiplying the days by 60. This equals " + totalHours + " hours.");
+        totalMinutes = totalHours * 60;
+        System.out.println("Next you need to get the total amount of minutes from " + totalHours + " by multiplying that number by 60. You should get " + totalMinutes + " minutes.");
+        totalSeconds = totalMinutes * 60;
+        totalMilliSeconds = totalSeconds * 1000;
+        System.out.println("Then you get the total amount of seconds by multiplying the total number of minutes by 60 again. That number is " + totalSeconds + " seconds.");
+        System.out.println("Finally, you can get the amount of milliseconds by multiplying the amount of seconds by 1,000. That number is " + totalMilliSeconds + " milliseconds.");
+        System.out.println();
 
     }
 }
